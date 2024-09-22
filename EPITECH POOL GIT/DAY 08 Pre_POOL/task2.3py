@@ -1,0 +1,15 @@
+# Task 2.3
+# This function draws a regular polygon with a specified number of sides.
+
+import turtle
+
+def draw_polygon(sides):
+    """Draw a polygon with the specified number of sides."""
+    angle = 360 / sides  # Calculate the angle for each turn
+    for _ in range(sides):
+        turtle.forward(100)  # Move forward 100 units
+        turtle.right(angle)  # Turn by the calculated angle
+
+# Example usage: Draw a pentagon (5 sides)
+draw_polygon(5)
+turtle.done()  # Finish the drawing
